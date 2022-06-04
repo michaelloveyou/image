@@ -1,0 +1,62 @@
+{
+    "description": "for bk7236 digital simulation",
+    "images": [
+        {
+            "partition": "Control",
+            "firmware": "./bin/1.bin",
+            "start_addr": "0x02000000",
+            "size": "4k",
+            "crc": "N",
+            "enc": "N"
+        },
+        {
+            "partition": "OTP Simulation",
+            "firmware": "./bin/2.bin",
+            "start_addr": "0x02001000",
+            "size": "4k",
+            "crc": "N"
+        },
+        {
+            "partition": "Recovery Manifest",
+            "firmware": "./bin/3.bin",
+            "start_addr": "0x02002000",
+            "size": "4k",
+            "crc": "N"
+        },
+        {
+            "partition": "Recovery Bootloader",
+            "firmware": "./bin/4.bin",
+            "start_addr": "0x02003000",
+            "size": "64k",
+            "crc": "Y"
+        },
+        {
+            "partition": "Primary Manifest",
+            "firmware": "./bin/5.bin",
+            "start_addr": "0x02013000",
+            "size": "4k",
+            "crc": "Y"
+        },
+        {
+            "partition": "Primary Bootloader",
+            "firmware": "./bin/6.bin",
+            "start_addr": "0x02014000",
+            "size": "64k",
+            "crc": "Y"
+        },
+        {
+            "partition": "SPE",
+            "firmware": "./bin/7.bin",
+            "start_addr": "0x02024000",
+            "size": "384k",
+            "crc": "Y"
+        },
+        {
+            "partition": "NSPE",
+            "firmware": "./bin/8.bin",
+            "start_addr": "0x02084000",
+            "size": "256k",
+            "crc": "Y"
+        }
+    ]
+}
